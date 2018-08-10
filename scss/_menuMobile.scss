@@ -1,0 +1,163 @@
+.navigation{
+  .right{
+    margin: 0;
+    .menuMobileICON{
+    	 display:none;
+       margin: 0px;
+       vertical-align: middle;
+
+    		p{
+    			font-size: 9px;
+    			letter-spacing: 1.5px;
+    			color: #ffffff;
+    			font-family:$Bd-font;
+          margin-right: 6px;
+          display: inline-block;
+          vertical-align: middle;
+    		}
+    		/*hamburguer icon*/
+            span{
+              cursor: pointer;
+              display: block;
+              display: inline-block;
+              vertical-align: middle;
+              //position: absolute;
+              width: 24px;
+              transition: all 5s ease-in-out;
+            }
+            span:before,span:after {
+              background-color: #ffffff;
+              content: '';
+              display: block;
+              height: 4px;
+              transition: all 200ms ease-in-out;
+            }
+            span:before {
+              box-shadow: 0 10px 0 #ffffff;
+              margin-bottom: 16px;
+            }
+            span:hover:before {
+              box-shadow: 0 0 0 #ffffff;
+              transform: translateY(10px) rotate(45deg);
+            }
+            span:hover:after{
+              transform: translateY(-10px) rotate(-45deg);
+            }
+            /*end hamburguer icon*/
+
+    }
+  }
+}
+
+.menuMobile{
+  display: none;
+  position: fixed;
+  width:100%;
+  height:100%;
+  background: linear-gradient(150deg, #00539b, #06507f);
+  z-index: 999999999999;
+  padding-left: 5%;
+  padding-top: 5%;
+      .logo{
+        width:50%;
+        text-align: left;
+        display: inline-block;
+        li{
+          display: inline-block;
+          margin-right: 13px;
+          vertical-align: middle;
+            img{
+              width: 49px;
+              height: 49px;
+            }
+            .regressoAulas{
+              width: 61px;
+              vertical-align: middle;
+                h3{
+                  font-family: $Bd-font;
+                  font-size: 12px;
+                  color: #ffffff;
+                }
+                em{
+                  font-size: 13px;
+                  line-height: 1.3;
+                }
+                h2{
+                  font-size: 23px;
+                  font-family: $XBd-font;
+                  color:#f8e71c;
+
+                }
+            }
+        }
+      }
+      .menu{
+          margin: 100px auto 0 auto;
+          text-align: center;
+          vertical-align: middle;
+            li{
+              margin-top:44px;
+              vertical-align: middle;
+              a{
+                text-decoration: none;
+                p{
+                  font-size: 30px;
+                  color: #ffffff;
+                  text-align: center;
+                  line-height: 48px;
+                  font-family: $XBd-font;
+                  transition: all 0.3s ease-in-out;
+
+                    &:hover{
+                      color:#f8e71c;
+                    }
+
+                }
+
+             }
+          }
+
+      }
+
+   .menuMobileICON{
+       margin: 0px auto;
+       vertical-align: middle;
+       display: inline-block;
+       text-align:right;
+       width: 45%;
+
+
+        p{
+          font-size: 9px;
+          letter-spacing: 1.5px;
+          color: #ffffff;
+          font-family:$Bd-font;
+          margin-right: 6px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        /*hamburguer icon*/
+            span{
+              cursor: pointer;
+              display: block;
+              display: inline-block;
+              vertical-align: middle;
+              width: 24px;
+              transition: all 5s ease-in-out;
+            }
+            span:before,span:after {
+              background-color: #ffffff;
+              content: '';
+              display: block;
+              height: 4px;
+              transition: all 200ms ease-in-out;
+              transform: translateY(-10px) rotate(-45deg);
+            }
+            span:before {
+              margin-bottom: 16px;
+              transform: translateY(10px) rotate(45deg);
+            }
+            /*end hamburguer icon*/
+
+    }
+}

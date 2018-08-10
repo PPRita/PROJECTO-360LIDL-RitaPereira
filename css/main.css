@@ -1,0 +1,3945 @@
+@charset "UTF-8";
+/* Generic imports */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 27, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_reset.scss */
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* line 34, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_reset.scss */
+html[data-agent*="Trident"] .section-video .blur {
+  display: none;
+}
+
+/* line 40, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_reset.scss */
+html[data-agent*="Trident"] .section-video .blur-ie {
+  display: block;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 46, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 50, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_reset.scss */
+body {
+  line-height: 1;
+  touch-action: manipulation;
+}
+
+/* line 55, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 58, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 61, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 66, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 70, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_reset.scss */
+i {
+  font-style: italic;
+}
+
+/* line 73, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_reset.scss */
+b {
+  font-weight: 700;
+}
+
+/* line 77, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_reset.scss */
+input, input:before, input:after {
+  -webkit-user-select: initial;
+  -khtml-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+/* line 6, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_config.scss */
+body, html {
+  font-family: "News Gothic BT";
+  height: 100%;
+}
+
+/* line 12, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_config.scss */
+section[data-margin-top='0'] {
+  padding-top: 0;
+}
+
+/* line 15, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_config.scss */
+section[data-margin-bottom='0'] {
+  padding-bottom: 0;
+}
+
+/* line 19, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_config.scss */
+section[data-margin-top='20'] {
+  padding-top: 20px;
+}
+
+/* line 22, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_config.scss */
+section[data-margin-bottom='20'] {
+  padding-bottom: 20px;
+}
+
+/* line 25, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_config.scss */
+section[data-margin-top='40'] {
+  padding-top: 40px;
+}
+
+/* line 28, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_config.scss */
+section[data-margin-bottom='40'] {
+  padding-bottom: 40px;
+}
+
+/* line 31, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_config.scss */
+section[data-margin-top='60'] {
+  padding-top: 60px;
+}
+
+/* line 34, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_config.scss */
+section[data-margin-bottom='60'] {
+  padding-bottom: 60px;
+}
+
+/* line 39, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_config.scss */
+section[data-text-align="right"] .wrapper {
+  text-align: right;
+}
+
+/* line 44, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_config.scss */
+section[data-text-align="left"] .wrapper {
+  text-align: left;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon/icomoon.eot?60zso8");
+  src: url("fonts/icomoon/icomoon.eot?60zso8#iefix") format("embedded-opentype"), url("fonts/icomoon/icomoon.ttf?60zso8") format("truetype"), url("fonts/icomoon/icomoon.woff?60zso8") format("woff"), url("fonts/icomoon/icomoon.svg?60zso8#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 12, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 27, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-times:before {
+  content: "\e900";
+}
+
+/* line 30, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-tick:before {
+  content: "\e901";
+}
+
+/* line 33, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-plus:before {
+  content: "\e902";
+}
+
+/* line 36, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-minus:before {
+  content: "\e903";
+}
+
+/* line 39, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-equals:before {
+  content: "\e904";
+}
+
+/* line 42, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-divide:before {
+  content: "\e905";
+}
+
+/* line 45, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-chevron-right:before {
+  content: "\e906";
+}
+
+/* line 48, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-chevron-left:before {
+  content: "\e907";
+}
+
+/* line 51, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-right-thick:before {
+  content: "\e908";
+}
+
+/* line 54, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-left-thick:before {
+  content: "\e909";
+}
+
+/* line 57, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-th-small:before {
+  content: "\e90a";
+}
+
+/* line 60, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-th-menu:before {
+  content: "\e90b";
+}
+
+/* line 63, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-th-list:before {
+  content: "\e90c";
+}
+
+/* line 66, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-th-large:before {
+  content: "\e90d";
+}
+
+/* line 69, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-home:before {
+  content: "\e90e";
+}
+
+/* line 72, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-forward:before {
+  content: "\e90f";
+}
+
+/* line 75, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-back:before {
+  content: "\e910";
+}
+
+/* line 78, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-rss:before {
+  content: "\e911";
+}
+
+/* line 81, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-location:before {
+  content: "\e912";
+}
+
+/* line 84, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-link:before {
+  content: "\e913";
+}
+
+/* line 87, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-image:before {
+  content: "\e914";
+}
+
+/* line 90, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-up-thick:before {
+  content: "\e915";
+}
+
+/* line 93, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-down-thick:before {
+  content: "\e916";
+}
+
+/* line 96, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-starburst:before {
+  content: "\e917";
+}
+
+/* line 99, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-starburst-outline:before {
+  content: "\e918";
+}
+
+/* line 102, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-star:before {
+  content: "\e919";
+}
+
+/* line 105, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-flow-children:before {
+  content: "\e91a";
+}
+
+/* line 108, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-export:before {
+  content: "\e91b";
+}
+
+/* line 111, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-delete:before {
+  content: "\e91c";
+}
+
+/* line 114, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-delete-outline:before {
+  content: "\e91d";
+}
+
+/* line 117, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-cloud-storage:before {
+  content: "\e91e";
+}
+
+/* line 120, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-wi-fi:before {
+  content: "\e91f";
+}
+
+/* line 123, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-heart:before {
+  content: "\e920";
+}
+
+/* line 126, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-flash:before {
+  content: "\e921";
+}
+
+/* line 129, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-cancel:before {
+  content: "\e922";
+}
+
+/* line 132, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-backspace:before {
+  content: "\e923";
+}
+
+/* line 135, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-attachment:before {
+  content: "\e924";
+}
+
+/* line 138, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-move:before {
+  content: "\e925";
+}
+
+/* line 141, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-warning:before {
+  content: "\e926";
+}
+
+/* line 144, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-user:before {
+  content: "\e927";
+}
+
+/* line 147, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-radar:before {
+  content: "\e928";
+}
+
+/* line 150, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-lock-open:before {
+  content: "\e929";
+}
+
+/* line 153, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-lock-closed:before {
+  content: "\e92a";
+}
+
+/* line 156, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-location-arrow:before {
+  content: "\e92b";
+}
+
+/* line 159, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-info:before {
+  content: "\e92c";
+}
+
+/* line 162, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-user-delete:before {
+  content: "\e92d";
+}
+
+/* line 165, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-user-add:before {
+  content: "\e92e";
+}
+
+/* line 168, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-media-pause:before {
+  content: "\e92f";
+}
+
+/* line 171, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-group:before {
+  content: "\e930";
+}
+
+/* line 174, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-chart-pie:before {
+  content: "\e931";
+}
+
+/* line 177, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-chart-line:before {
+  content: "\e932";
+}
+
+/* line 180, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-chart-bar:before {
+  content: "\e933";
+}
+
+/* line 183, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-chart-area:before {
+  content: "\e934";
+}
+
+/* line 186, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-video:before {
+  content: "\e935";
+}
+
+/* line 189, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-point-of-interest:before {
+  content: "\e936";
+}
+
+/* line 192, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-infinity:before {
+  content: "\e937";
+}
+
+/* line 195, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-globe:before {
+  content: "\e938";
+}
+
+/* line 198, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-eye:before {
+  content: "\e939";
+}
+
+/* line 201, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-cog:before {
+  content: "\e93a";
+}
+
+/* line 204, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-camera:before {
+  content: "\e93b";
+}
+
+/* line 207, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-upload:before {
+  content: "\e93c";
+}
+
+/* line 210, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-scissors:before {
+  content: "\e93d";
+}
+
+/* line 213, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-refresh:before {
+  content: "\e93e";
+}
+
+/* line 216, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-pin:before {
+  content: "\e93f";
+}
+
+/* line 219, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-key:before {
+  content: "\e940";
+}
+
+/* line 222, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-info-large:before {
+  content: "\e941";
+}
+
+/* line 225, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-eject:before {
+  content: "\e942";
+}
+
+/* line 228, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-download:before {
+  content: "\e943";
+}
+
+/* line 231, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-zoom:before {
+  content: "\e944";
+}
+
+/* line 234, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-zoom-out:before {
+  content: "\e945";
+}
+
+/* line 237, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-zoom-in:before {
+  content: "\e946";
+}
+
+/* line 240, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-sort-numerically:before {
+  content: "\e947";
+}
+
+/* line 243, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-sort-alphabetically:before {
+  content: "\e948";
+}
+
+/* line 246, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-input-checked:before {
+  content: "\e949";
+}
+
+/* line 249, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-calender:before {
+  content: "\e94a";
+}
+
+/* line 252, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-world:before {
+  content: "\e94b";
+}
+
+/* line 255, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-notes:before {
+  content: "\e94c";
+}
+
+/* line 258, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-code:before {
+  content: "\e94d";
+}
+
+/* line 261, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-sync:before {
+  content: "\e94e";
+}
+
+/* line 264, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-shuffle:before {
+  content: "\e94f";
+}
+
+/* line 267, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-repeat:before {
+  content: "\e950";
+}
+
+/* line 270, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-minimise:before {
+  content: "\e951";
+}
+
+/* line 273, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-maximise:before {
+  content: "\e952";
+}
+
+/* line 276, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-loop:before {
+  content: "\e953";
+}
+
+/* line 279, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-anchor:before {
+  content: "\e954";
+}
+
+/* line 282, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-spanner:before {
+  content: "\e955";
+}
+
+/* line 285, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-puzzle:before {
+  content: "\e956";
+}
+
+/* line 288, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-power:before {
+  content: "\e957";
+}
+
+/* line 291, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-plane:before {
+  content: "\e958";
+}
+
+/* line 294, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-pi:before {
+  content: "\e959";
+}
+
+/* line 297, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-phone:before {
+  content: "\e95a";
+}
+
+/* line 300, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-microphone:before {
+  content: "\e95b";
+}
+
+/* line 303, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-media-rewind:before {
+  content: "\e95c";
+}
+
+/* line 306, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-flag:before {
+  content: "\e95d";
+}
+
+/* line 309, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-adjust-brightness:before {
+  content: "\e95e";
+}
+
+/* line 312, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-waves:before {
+  content: "\e95f";
+}
+
+/* line 315, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-twitter:before {
+  content: "\e960";
+}
+
+/* line 318, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-facebook:before {
+  content: "\e961";
+}
+
+/* line 321, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-dribbble:before {
+  content: "\e962";
+}
+
+/* line 324, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-media-stop:before {
+  content: "\e963";
+}
+
+/* line 327, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-media-record:before {
+  content: "\e964";
+}
+
+/* line 330, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-media-play:before {
+  content: "\e965";
+}
+
+/* line 333, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-media-fast-forward:before {
+  content: "\e966";
+}
+
+/* line 336, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-media-eject:before {
+  content: "\e967";
+}
+
+/* line 339, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-vimeo:before {
+  content: "\e968";
+}
+
+/* line 342, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-tumbler:before {
+  content: "\e969";
+}
+
+/* line 345, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-skype:before {
+  content: "\e96a";
+}
+
+/* line 348, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-pinterest:before {
+  content: "\e96b";
+}
+
+/* line 351, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-linkedin:before {
+  content: "\e96c";
+}
+
+/* line 354, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-last-fm:before {
+  content: "\e96d";
+}
+
+/* line 357, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-github:before {
+  content: "\e96e";
+}
+
+/* line 360, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-flickr:before {
+  content: "\e96f";
+}
+
+/* line 363, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-at:before {
+  content: "\e970";
+}
+
+/* line 366, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-times-outline:before {
+  content: "\e971";
+}
+
+/* line 369, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-plus-outline:before {
+  content: "\e972";
+}
+
+/* line 372, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-minus-outline:before {
+  content: "\e973";
+}
+
+/* line 375, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-tick-outline:before {
+  content: "\e974";
+}
+
+/* line 378, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-th-large-outline:before {
+  content: "\e975";
+}
+
+/* line 381, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-equals-outline:before {
+  content: "\e976";
+}
+
+/* line 384, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-divide-outline:before {
+  content: "\e977";
+}
+
+/* line 387, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-chevron-right-outline:before {
+  content: "\e978";
+}
+
+/* line 390, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-chevron-left-outline:before {
+  content: "\e979";
+}
+
+/* line 393, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-right-outline:before {
+  content: "\e97a";
+}
+
+/* line 396, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-left-outline:before {
+  content: "\e97b";
+}
+
+/* line 399, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-th-small-outline:before {
+  content: "\e97c";
+}
+
+/* line 402, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-th-menu-outline:before {
+  content: "\e97d";
+}
+
+/* line 405, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-th-list-outline:before {
+  content: "\e97e";
+}
+
+/* line 408, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-news:before {
+  content: "\e97f";
+}
+
+/* line 411, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-home-outline:before {
+  content: "\e980";
+}
+
+/* line 414, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-up-outline:before {
+  content: "\e981";
+}
+
+/* line 417, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-forward-outline:before {
+  content: "\e982";
+}
+
+/* line 420, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-down-outline:before {
+  content: "\e983";
+}
+
+/* line 423, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-back-outline:before {
+  content: "\e984";
+}
+
+/* line 426, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-trash:before {
+  content: "\e985";
+}
+
+/* line 429, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-rss-outline:before {
+  content: "\e986";
+}
+
+/* line 432, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-message:before {
+  content: "\e987";
+}
+
+/* line 435, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-location-outline:before {
+  content: "\e988";
+}
+
+/* line 438, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-link-outline:before {
+  content: "\e989";
+}
+
+/* line 441, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-image-outline:before {
+  content: "\e98a";
+}
+
+/* line 444, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-export-outline:before {
+  content: "\e98b";
+}
+
+/* line 447, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-cross:before {
+  content: "\e98c";
+}
+
+/* line 450, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-wi-fi-outline:before {
+  content: "\e98d";
+}
+
+/* line 453, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-star-outline:before {
+  content: "\e98e";
+}
+
+/* line 456, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-media-pause-outline:before {
+  content: "\e98f";
+}
+
+/* line 459, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-mail:before {
+  content: "\e990";
+}
+
+/* line 462, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-heart-outline:before {
+  content: "\e991";
+}
+
+/* line 465, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-flash-outline:before {
+  content: "\e992";
+}
+
+/* line 468, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-cancel-outline:before {
+  content: "\e993";
+}
+
+/* line 471, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-beaker:before {
+  content: "\e994";
+}
+
+/* line 474, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-move-outline:before {
+  content: "\e995";
+}
+
+/* line 477, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-watch:before {
+  content: "\e996";
+}
+
+/* line 480, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-warning-outline:before {
+  content: "\e997";
+}
+
+/* line 483, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-time:before {
+  content: "\e998";
+}
+
+/* line 486, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-radar-outline:before {
+  content: "\e999";
+}
+
+/* line 489, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-lock-open-outline:before {
+  content: "\e99a";
+}
+
+/* line 492, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-location-arrow-outline:before {
+  content: "\e99b";
+}
+
+/* line 495, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-info-outline:before {
+  content: "\e99c";
+}
+
+/* line 498, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-backspace-outline:before {
+  content: "\e99d";
+}
+
+/* line 501, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-attachment-outline:before {
+  content: "\e99e";
+}
+
+/* line 504, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-user-outline:before {
+  content: "\e99f";
+}
+
+/* line 507, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-user-delete-outline:before {
+  content: "\e9a0";
+}
+
+/* line 510, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-user-add-outline:before {
+  content: "\e9a1";
+}
+
+/* line 513, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-lock-closed-outline:before {
+  content: "\e9a2";
+}
+
+/* line 516, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-group-outline:before {
+  content: "\e9a3";
+}
+
+/* line 519, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-chart-pie-outline:before {
+  content: "\e9a4";
+}
+
+/* line 522, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-chart-line-outline:before {
+  content: "\e9a5";
+}
+
+/* line 525, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-chart-bar-outline:before {
+  content: "\e9a6";
+}
+
+/* line 528, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-chart-area-outline:before {
+  content: "\e9a7";
+}
+
+/* line 531, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-video-outline:before {
+  content: "\e9a8";
+}
+
+/* line 534, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-point-of-interest-outline:before {
+  content: "\e9a9";
+}
+
+/* line 537, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-map:before {
+  content: "\e9aa";
+}
+
+/* line 540, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-key-outline:before {
+  content: "\e9ab";
+}
+
+/* line 543, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-infinity-outline:before {
+  content: "\e9ac";
+}
+
+/* line 546, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-globe-outline:before {
+  content: "\e9ad";
+}
+
+/* line 549, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-eye-outline:before {
+  content: "\e9ae";
+}
+
+/* line 552, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-cog-outline:before {
+  content: "\e9af";
+}
+
+/* line 555, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-camera-outline:before {
+  content: "\e9b0";
+}
+
+/* line 558, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-upload-outline:before {
+  content: "\e9b1";
+}
+
+/* line 561, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-support:before {
+  content: "\e9b2";
+}
+
+/* line 564, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-scissors-outline:before {
+  content: "\e9b3";
+}
+
+/* line 567, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-refresh-outline:before {
+  content: "\e9b4";
+}
+
+/* line 570, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-info-large-outline:before {
+  content: "\e9b5";
+}
+
+/* line 573, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-eject-outline:before {
+  content: "\e9b6";
+}
+
+/* line 576, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-download-outline:before {
+  content: "\e9b7";
+}
+
+/* line 579, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-battery-mid:before {
+  content: "\e9b8";
+}
+
+/* line 582, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-battery-low:before {
+  content: "\e9b9";
+}
+
+/* line 585, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-battery-high:before {
+  content: "\e9ba";
+}
+
+/* line 588, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-zoom-outline:before {
+  content: "\e9bb";
+}
+
+/* line 591, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-zoom-out-outline:before {
+  content: "\e9bc";
+}
+
+/* line 594, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-zoom-in-outline:before {
+  content: "\e9bd";
+}
+
+/* line 597, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-tag:before {
+  content: "\e9be";
+}
+
+/* line 600, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-tabs-outline:before {
+  content: "\e9bf";
+}
+
+/* line 603, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-pin-outline:before {
+  content: "\e9c0";
+}
+
+/* line 606, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-message-typing:before {
+  content: "\e9c1";
+}
+
+/* line 609, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-directions:before {
+  content: "\e9c2";
+}
+
+/* line 612, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-battery-full:before {
+  content: "\e9c3";
+}
+
+/* line 615, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-battery-charge:before {
+  content: "\e9c4";
+}
+
+/* line 618, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-pipette:before {
+  content: "\e9c5";
+}
+
+/* line 621, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-pencil:before {
+  content: "\e9c6";
+}
+
+/* line 624, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-folder:before {
+  content: "\e9c7";
+}
+
+/* line 627, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-folder-delete:before {
+  content: "\e9c8";
+}
+
+/* line 630, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-folder-add:before {
+  content: "\e9c9";
+}
+
+/* line 633, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-edit:before {
+  content: "\e9ca";
+}
+
+/* line 636, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-document:before {
+  content: "\e9cb";
+}
+
+/* line 639, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-document-delete:before {
+  content: "\e9cc";
+}
+
+/* line 642, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-document-add:before {
+  content: "\e9cd";
+}
+
+/* line 645, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-brush:before {
+  content: "\e9ce";
+}
+
+/* line 648, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-thumbs-up:before {
+  content: "\e9cf";
+}
+
+/* line 651, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-thumbs-down:before {
+  content: "\e9d0";
+}
+
+/* line 654, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-pen:before {
+  content: "\e9d1";
+}
+
+/* line 657, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-sort-numerically-outline:before {
+  content: "\e9d2";
+}
+
+/* line 660, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-sort-alphabetically-outline:before {
+  content: "\e9d3";
+}
+
+/* line 663, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-last-fm-circular:before {
+  content: "\e9d4";
+}
+
+/* line 666, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-github-circular:before {
+  content: "\e9d5";
+}
+
+/* line 669, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-compass:before {
+  content: "\e9d6";
+}
+
+/* line 672, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-bookmark:before {
+  content: "\e9d7";
+}
+
+/* line 675, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-input-checked-outline:before {
+  content: "\e9d8";
+}
+
+/* line 678, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-code-outline:before {
+  content: "\e9d9";
+}
+
+/* line 681, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-calender-outline:before {
+  content: "\e9da";
+}
+
+/* line 684, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-business-card:before {
+  content: "\e9db";
+}
+
+/* line 687, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-up:before {
+  content: "\e9dc";
+}
+
+/* line 690, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-sync-outline:before {
+  content: "\e9dd";
+}
+
+/* line 693, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-right:before {
+  content: "\e9de";
+}
+
+/* line 696, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-repeat-outline:before {
+  content: "\e9df";
+}
+
+/* line 699, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-loop-outline:before {
+  content: "\e9e0";
+}
+
+/* line 702, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-left:before {
+  content: "\e9e1";
+}
+
+/* line 705, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-flow-switch:before {
+  content: "\e9e2";
+}
+
+/* line 708, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-flow-parallel:before {
+  content: "\e9e3";
+}
+
+/* line 711, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-flow-merge:before {
+  content: "\e9e4";
+}
+
+/* line 714, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-document-text:before {
+  content: "\e9e5";
+}
+
+/* line 717, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-clipboard:before {
+  content: "\e9e6";
+}
+
+/* line 720, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-calculator:before {
+  content: "\e9e7";
+}
+
+/* line 723, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-minimise-outline:before {
+  content: "\e9e8";
+}
+
+/* line 726, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-maximise-outline:before {
+  content: "\e9e9";
+}
+
+/* line 729, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-arrow-down:before {
+  content: "\e9ea";
+}
+
+/* line 732, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-gift:before {
+  content: "\e9eb";
+}
+
+/* line 735, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-film:before {
+  content: "\e9ec";
+}
+
+/* line 738, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-database:before {
+  content: "\e9ed";
+}
+
+/* line 741, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-bell:before {
+  content: "\e9ee";
+}
+
+/* line 744, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-anchor-outline:before {
+  content: "\e9ef";
+}
+
+/* line 747, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-adjust-contrast:before {
+  content: "\e9f0";
+}
+
+/* line 750, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-world-outline:before {
+  content: "\e9f1";
+}
+
+/* line 753, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-shopping-bag:before {
+  content: "\e9f2";
+}
+
+/* line 756, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-power-outline:before {
+  content: "\e9f3";
+}
+
+/* line 759, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-notes-outline:before {
+  content: "\e9f4";
+}
+
+/* line 762, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-device-tablet:before {
+  content: "\e9f5";
+}
+
+/* line 765, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-device-phone:before {
+  content: "\e9f6";
+}
+
+/* line 768, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-device-laptop:before {
+  content: "\e9f7";
+}
+
+/* line 771, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-device-desktop:before {
+  content: "\e9f8";
+}
+
+/* line 774, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-briefcase:before {
+  content: "\e9f9";
+}
+
+/* line 777, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-stopwatch:before {
+  content: "\e9fa";
+}
+
+/* line 780, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-spanner-outline:before {
+  content: "\e9fb";
+}
+
+/* line 783, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-puzzle-outline:before {
+  content: "\e9fc";
+}
+
+/* line 786, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-printer:before {
+  content: "\e9fd";
+}
+
+/* line 789, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-pi-outline:before {
+  content: "\e9fe";
+}
+
+/* line 792, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-lightbulb:before {
+  content: "\e9ff";
+}
+
+/* line 795, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-flag-outline:before {
+  content: "\ea00";
+}
+
+/* line 798, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-contacts:before {
+  content: "\ea01";
+}
+
+/* line 801, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-archive:before {
+  content: "\ea02";
+}
+
+/* line 804, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-weather-stormy:before {
+  content: "\ea03";
+}
+
+/* line 807, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-weather-shower:before {
+  content: "\ea04";
+}
+
+/* line 810, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-weather-partly-sunny:before {
+  content: "\ea05";
+}
+
+/* line 813, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-weather-downpour:before {
+  content: "\ea06";
+}
+
+/* line 816, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-weather-cloudy:before {
+  content: "\ea07";
+}
+
+/* line 819, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-plane-outline:before {
+  content: "\ea08";
+}
+
+/* line 822, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-phone-outline:before {
+  content: "\ea09";
+}
+
+/* line 825, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-microphone-outline:before {
+  content: "\ea0a";
+}
+
+/* line 828, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-weather-windy:before {
+  content: "\ea0b";
+}
+
+/* line 831, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-weather-windy-cloudy:before {
+  content: "\ea0c";
+}
+
+/* line 834, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-weather-sunny:before {
+  content: "\ea0d";
+}
+
+/* line 837, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-weather-snow:before {
+  content: "\ea0e";
+}
+
+/* line 840, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-weather-night:before {
+  content: "\ea0f";
+}
+
+/* line 843, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-media-stop-outline:before {
+  content: "\ea10";
+}
+
+/* line 846, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-media-rewind-outline:before {
+  content: "\ea11";
+}
+
+/* line 849, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-media-record-outline:before {
+  content: "\ea12";
+}
+
+/* line 852, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-media-play-outline:before {
+  content: "\ea13";
+}
+
+/* line 855, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-media-fast-forward-outline:before {
+  content: "\ea14";
+}
+
+/* line 858, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-media-eject-outline:before {
+  content: "\ea15";
+}
+
+/* line 861, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-wine:before {
+  content: "\ea16";
+}
+
+/* line 864, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-waves-outline:before {
+  content: "\ea17";
+}
+
+/* line 867, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-ticket:before {
+  content: "\ea18";
+}
+
+/* line 870, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-tags:before {
+  content: "\ea19";
+}
+
+/* line 873, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-plug:before {
+  content: "\ea1a";
+}
+
+/* line 876, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-headphones:before {
+  content: "\ea1b";
+}
+
+/* line 879, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-credit-card:before {
+  content: "\ea1c";
+}
+
+/* line 882, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-coffee:before {
+  content: "\ea1d";
+}
+
+/* line 885, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-book:before {
+  content: "\ea1e";
+}
+
+/* line 888, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-beer:before {
+  content: "\ea1f";
+}
+
+/* line 891, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-volume:before {
+  content: "\ea20";
+}
+
+/* line 894, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-volume-up:before {
+  content: "\ea21";
+}
+
+/* line 897, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-volume-mute:before {
+  content: "\ea22";
+}
+
+/* line 900, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-volume-down:before {
+  content: "\ea23";
+}
+
+/* line 903, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-vimeo-circular:before {
+  content: "\ea24";
+}
+
+/* line 906, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-twitter-circular:before {
+  content: "\ea25";
+}
+
+/* line 909, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-pinterest-circular:before {
+  content: "\ea26";
+}
+
+/* line 912, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-linkedin-circular:before {
+  content: "\ea27";
+}
+
+/* line 915, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-facebook-circular:before {
+  content: "\ea28";
+}
+
+/* line 918, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-dribbble-circular:before {
+  content: "\ea29";
+}
+
+/* line 921, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-tree:before {
+  content: "\ea2a";
+}
+
+/* line 924, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-thermometer:before {
+  content: "\ea2b";
+}
+
+/* line 927, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-tumbler-circular:before {
+  content: "\ea2c";
+}
+
+/* line 930, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-skype-outline:before {
+  content: "\ea2d";
+}
+
+/* line 933, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-flickr-circular:before {
+  content: "\ea2e";
+}
+
+/* line 936, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-social-at-circular:before {
+  content: "\ea2f";
+}
+
+/* line 939, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-shopping-cart:before {
+  content: "\ea30";
+}
+
+/* line 942, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-messages:before {
+  content: "\ea31";
+}
+
+/* line 945, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-leaf:before {
+  content: "\ea32";
+}
+
+/* line 948, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_icons.scss */
+.icon-feather:before {
+  content: "\ea33";
+}
+
+/* Media Query */
+/* @include mq(min,max){} */
+/* Moldue imports */
+/* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+nav {
+  width: 100%;
+  height: 80px;
+  margin-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  display: inline-block;
+  font-size: 0;
+  z-index: 99999999;
+  position: absolute;
+}
+
+/* line 12, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+nav .navigation {
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* line 19, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+nav .navigation .left {
+  text-align: left;
+  font-size: 0;
+  width: 30%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* line 25, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+nav .navigation .left li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 28, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+nav .navigation .left li img {
+  widht: 79.1px;
+  height: 79.1px;
+}
+
+/* line 33, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+nav .navigation .left li .regressoAulas {
+  margin-left: 20px;
+  display: inline-block;
+  width: 61px;
+}
+
+/* line 37, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+nav .navigation .left li .regressoAulas h3 {
+  font-family: "News Gothic Bd BT";
+  font-size: 12px;
+  color: #ffffff;
+}
+
+/* line 42, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+nav .navigation .left li .regressoAulas em {
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+/* line 46, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+nav .navigation .left li .regressoAulas h2 {
+  font-size: 23px;
+  font-family: "News Gothic XBd BT";
+  color: #f8e71c;
+}
+
+@media (min-width: 0) and (max-width: 1080px) {
+  /* line 19, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+  nav .navigation .left {
+    width: 50%;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 19, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+  nav .navigation .left {
+    width: 80%;
+  }
+}
+
+/* line 65, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+nav .navigation .right {
+  font-size: 0;
+  position: absolute;
+  right: 0px;
+  top: 45%;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: right;
+}
+
+/* line 73, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+nav .navigation .right li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 50px;
+  text-align: center;
+}
+
+/* line 79, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+nav .navigation .right li a {
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 83, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+nav .navigation .right li a p {
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  margin: 0 auto;
+}
+
+/* line 89, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+nav .navigation .right li a p:hover {
+  color: #f8e71c;
+}
+
+/* line 96, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+nav .navigation .right .active {
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: center;
+  transition: all 2s ease-in-out;
+}
+
+/* line 104, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+nav .navigation .right .active a {
+  background-color: green;
+}
+
+/* line 107, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+nav .navigation .right .active a p {
+  color: #f8e71c;
+}
+
+/* line 112, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+nav .navigation .right .active a:before {
+  content: '';
+  width: 100%;
+  height: 2.5px;
+  background-color: #f8e71c;
+  position: absolute;
+  top: 25px;
+  left: 0;
+}
+
+@media (min-width: 0) and (max-width: 1080px) {
+  /* line 65, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+  nav .navigation .right {
+    width: 20%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    text-align: right;
+  }
+  /* line 132, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+  nav .navigation .right li {
+    display: none;
+  }
+  /* line 134, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+  nav .navigation .right li:first-child {
+    display: block;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 65, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_navigation.scss */
+  nav .navigation .right {
+    width: 25%;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_hero.scss */
+.hero {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* line 6, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_hero.scss */
+.hero img {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* line 13, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_hero.scss */
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.44), transparent), linear-gradient(to bottom, rgba(0, 83, 155, 0.28), #00539b);
+  z-index: 99;
+}
+
+@media (min-width: 0) and (max-width: 320px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_hero.scss */
+  .hero {
+    width: 106%;
+  }
+  /* line 25, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_hero.scss */
+  .hero:before {
+    width: 106%;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+.heroFeatures {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 326px;
+  z-index: 999;
+  margin-top: 217px;
+  font-size: 0;
+  vertical-align: middle;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* line 13, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+.heroFeatures .wrapper {
+  max-width: 432px;
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 18, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+.heroFeatures .wrapper h1 {
+  font-family: "News Gothic XBd BT";
+  font-size: 50px;
+  text-align: left;
+  line-height: 50px;
+  color: #ffffff;
+}
+
+/* line 25, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+.heroFeatures .wrapper em {
+  color: #f8e71c;
+}
+
+/* line 28, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+.heroFeatures .wrapper p {
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: left;
+  line-height: 24px;
+}
+
+/* line 36, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+.heroFeatures .cta {
+  margin-top: 50px;
+  width: 151px;
+  height: 50px;
+  background: linear-gradient(to bottom, #f8e71c, #ebdb11);
+  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.16);
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 43, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+.heroFeatures .cta a {
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 46, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+.heroFeatures .cta a p {
+  font-family: "News Gothic Bd BT";
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #00539b;
+  padding: 15px;
+  text-align: center;
+}
+
+/* line 56, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+.heroFeatures .cta:hover {
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16);
+  background-color: #e2d21a;
+}
+
+/* line 61, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+.heroFeatures .figure {
+  width: 50%;
+  max-width: 731px;
+  height: 326px;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+  vertical-align: middle;
+}
+
+/* line 70, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+.heroFeatures .figure .circle {
+  border-radius: 50px;
+  border: 5px solid #ffffff;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 81, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+.heroFeatures .figure .circle i {
+  font-size: 42px;
+  color: #ffffff;
+  padding: 12px;
+  line-height: 1.4;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 88, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+.heroFeatures .figure .circle:hover {
+  opacity: 1;
+  box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.3), 0px 0px 0px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* line 99, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+.heroFeatures .mouseScroll {
+  width: 100%;
+  position: relative;
+  z-index: 99999999;
+}
+
+/* line 103, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+.heroFeatures .mouseScroll .mouse {
+  width: 3px;
+  padding: 10px 10px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  box-sizing: content-box;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* line 112, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+.heroFeatures .mouseScroll .mouse .scroll {
+  width: 3px;
+  height: 8px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 120, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+.heroFeatures .mouseScroll .mouse:hover .scroll {
+  margin-top: 8px;
+  background-color: #f8e71c;
+}
+
+/* line 126, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+.heroFeatures .mouseScroll p {
+  color: #ffffff;
+  font-size: 8px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (min-width: 0) and (max-width: 1080px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+  .heroFeatures {
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  /* line 140, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+  .heroFeatures .wrapper {
+    max-width: 527px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* line 145, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+  .heroFeatures .wrapper h1 {
+    max-width: 463px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* line 150, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+  .heroFeatures .wrapper p {
+    text-align: center;
+  }
+  /* line 154, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+  .heroFeatures .cta {
+    text-align: center;
+    margin: 40px auto 0 auto;
+  }
+  /* line 158, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+  .heroFeatures .figure {
+    display: none;
+  }
+  /* line 161, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+  .heroFeatures .mouseScroll {
+    display: none;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 167, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+  .heroFeatures .wrapper h1 {
+    max-width: 331px;
+  }
+  /* line 172, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+  .heroFeatures .figure {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin: 28px auto;
+    text-align: center;
+  }
+  /* line 179, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_heroFeatures.scss */
+  .heroFeatures .figure .circle {
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_features.scss */
+.features {
+  width: 100%;
+  font-size: 0;
+  vertical-align: middle;
+  background-color: #00539b;
+  margin: 0 auto;
+  text-align: center;
+  height: 600px;
+}
+
+/* line 9, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_features.scss */
+.features .wrapper {
+  max-width: 416px;
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 99999;
+  text-align: right;
+  position: relative;
+}
+
+/* line 17, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_features.scss */
+.features .wrapper h2 {
+  font-family: "News Gothic XBd BT";
+  font-size: 40px;
+  text-align: left;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+/* line 25, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_features.scss */
+.features .wrapper em {
+  color: #f8e71c;
+}
+
+/* line 28, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_features.scss */
+.features .wrapper p {
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: left;
+  line-height: 24px;
+}
+
+/* line 36, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_features.scss */
+.features .cta {
+  margin-top: 50px;
+  width: 239px;
+  height: 50px;
+  border: 2px solid #f8e71c;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 45, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_features.scss */
+.features .cta a {
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 48, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_features.scss */
+.features .cta a p {
+  font-family: "News Gothic Bd BT";
+  margin: 12px auto;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #f8e71c;
+  text-align: center;
+}
+
+/* line 60, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_features.scss */
+.features .cta:hover {
+  background: linear-gradient(to bottom, #f8e71c, #ebdb11);
+}
+
+/* line 63, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_features.scss */
+.features .cta:hover a p {
+  color: #00539b;
+}
+
+/* line 69, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_features.scss */
+.features .figure {
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  left: -110px;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 9999;
+}
+
+/* line 78, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_features.scss */
+.features .figure img {
+  height: 658px;
+  position: relative;
+  top: 18px;
+  left: -116px;
+}
+
+/* line 86, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_features.scss */
+.features .imageMobile {
+  display: none;
+  position: relative;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 9999;
+}
+
+/* line 93, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_features.scss */
+.features .imageMobile img {
+  height: 658px;
+  position: relative;
+  top: 18px;
+  left: -116px;
+}
+
+@media (min-width: 0) and (max-width: 1080px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_features.scss */
+  .features {
+    display: none;
+  }
+}
+
+/* line 2, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_imageFeatures.scss */
+.imageFeatures {
+  height: 780px;
+  width: 100%;
+  position: relative;
+}
+
+/* line 7, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_imageFeatures.scss */
+.imageFeatures img {
+  width: 100%;
+  transform: translateY(-30%);
+}
+
+/* line 11, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_imageFeatures.scss */
+.imageFeatures:before {
+  content: '';
+  position: absolute;
+  top: -400px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, transparent), linear-gradient(to top, rgba(0, 83, 155, 0.28), #00539b);
+  z-index: 99;
+}
+
+@media (min-width: 0) and (max-width: 1100px) {
+  /* line 22, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_imageFeatures.scss */
+  .imageFeatures img {
+    transform: translateY(-25%);
+  }
+}
+
+@media (min-width: 0) and (max-width: 1080px) {
+  /* line 2, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_imageFeatures.scss */
+  .imageFeatures {
+    display: none;
+  }
+}
+
+/* line 33, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_imageFeatures.scss */
+.infoFeatures {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  font-size: 0;
+  vertical-align: middle;
+  position: absolute;
+}
+
+/* line 43, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_imageFeatures.scss */
+.infoFeatures .wrapper {
+  max-width: 416px;
+  width: 50%;
+  margin-left: 133px;
+  margin-top: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 50, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_imageFeatures.scss */
+.infoFeatures .wrapper h2 {
+  font-family: "News Gothic XBd BT";
+  font-size: 40px;
+  text-align: left;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+/* line 58, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_imageFeatures.scss */
+.infoFeatures .wrapper em {
+  color: #f8e71c;
+}
+
+/* line 61, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_imageFeatures.scss */
+.infoFeatures .wrapper p {
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: left;
+  line-height: 24px;
+}
+
+/* line 69, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_imageFeatures.scss */
+.infoFeatures .cta {
+  margin-top: 50px;
+  width: 239px;
+  height: 50px;
+  border: 2px solid #f8e71c;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 78, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_imageFeatures.scss */
+.infoFeatures .cta a {
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 81, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_imageFeatures.scss */
+.infoFeatures .cta a p {
+  font-family: "News Gothic Bd BT";
+  margin: 12px auto;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #f8e71c;
+  text-align: center;
+}
+
+/* line 92, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_imageFeatures.scss */
+.infoFeatures .cta:hover {
+  background: linear-gradient(to bottom, #f8e71c, #ebdb11);
+}
+
+/* line 95, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_imageFeatures.scss */
+.infoFeatures .cta:hover a p {
+  color: #00539b;
+}
+
+/* line 101, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_imageFeatures.scss */
+.infoFeatures .figure {
+  width: 100%;
+  max-width: 731px;
+  display: inline-block;
+  position: relative;
+  top: 18px;
+  left: -116px;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 99;
+}
+
+/* line 112, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_imageFeatures.scss */
+.infoFeatures .figure img {
+  width: 100%;
+  height: 637px;
+}
+
+@media (min-width: 0) and (max-width: 1080px) {
+  /* line 33, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_imageFeatures.scss */
+  .infoFeatures {
+    display: none;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+.formSection {
+  width: 100%;
+  height: 608px;
+  background: linear-gradient(129deg, #f8e71c, #fcc500);
+  position: relative;
+  top: -220px;
+  z-index: 99;
+}
+
+/* line 9, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+.formSection .wrapper {
+  max-width: 412px;
+  width: 50%;
+  margin-left: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 99999;
+}
+
+/* line 18, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+.formSection .wrapper h2 {
+  font-family: "News Gothic XBd BT";
+  font-size: 40px;
+  text-align: left;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+/* line 26, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+.formSection .wrapper em {
+  color: #00539b;
+}
+
+/* line 29, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+.formSection .wrapper p {
+  margin-top: 30px;
+  color: #4a4a4a;
+  font-size: 16px;
+  text-align: left;
+  line-height: 24px;
+}
+
+/* line 37, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+.formSection .cta {
+  margin-top: 20px;
+  width: 344px;
+  height: 50px;
+  background: #00539b;
+  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 44, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+.formSection .cta a {
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 47, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+.formSection .cta a p {
+  font-family: "News Gothic Bd BT";
+  margin: 12px auto;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #f8e71c;
+  text-align: center;
+  color: #ffffff;
+  line-height: 4.17;
+}
+
+/* line 59, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+.formSection .cta:hover {
+  background-color: #06507f;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* line 64, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+.formSection .figure {
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  top: -50px;
+  left: 0;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 9999;
+}
+
+/* line 75, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+.formSection .figure img {
+  height: 658px;
+  width: 752px;
+}
+
+@media (min-width: 0) and (max-width: 1080px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+  .formSection {
+    top: 0;
+    width: 100%;
+    height: 654px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10%;
+  }
+  /* line 88, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+  .formSection .wrapper {
+    max-width: 520px;
+    width: 100%;
+    margin: 100px auto 0 auto;
+    text-align: center;
+  }
+  /* line 94, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+  .formSection .wrapper h2 {
+    text-align: center;
+  }
+  /* line 97, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+  .formSection .wrapper p {
+    text-align: center;
+    margin: 40px auto 20px auto;
+  }
+  /* line 103, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+  .formSection .figure {
+    display: none;
+  }
+  /* line 106, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+  .formSection .cta {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 113, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+  .formSection .cta {
+    width: 85%;
+  }
+}
+
+@media (min-width: 0) and (max-width: 320px) {
+  /* line 118, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+  .formSection .cta {
+    width: 85%;
+  }
+}
+
+/* line 125, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+.inputField input {
+  margin-top: 20px;
+  width: 344px;
+  height: 50px;
+  border: 2px solid #00539b;
+  background-color: transparent;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  padding-left: 20px;
+  font-size: 14px;
+  color: #00539b;
+  line-height: 20px;
+  font-family: "News Gothic Bd BT";
+  text-align: left;
+}
+
+/* line 140, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+.inputField input::placeholder {
+  color: #00539b;
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 147, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+  .inputField input {
+    width: 85%;
+  }
+}
+
+@media (min-width: 0) and (max-width: 320px) {
+  /* line 152, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+  .inputField input {
+    width: 85%;
+  }
+}
+
+/* line 157, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+.upload {
+  margin-top: 20px;
+  width: 344px;
+  height: 50px;
+  border: 2px solid #00539b;
+  background-color: transparent;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  display: block;
+  outline: 0;
+  padding: 14px 20px 13px 19px;
+  font-size: 12px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* line 172, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+.upload:after {
+  width: 15px;
+  height: 15px;
+  background-position: -66px -12px;
+  top: 13px;
+  right: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #00539b;
+  font-weight: bold;
+  content: "+";
+  position: absolute;
+}
+
+/* line 187, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+.upload em {
+  font-size: 14px;
+  color: #00539b;
+  line-height: 20px;
+  text-align: left;
+  font-family: "News Gothic Bd BT";
+}
+
+@media (min-width: 0) and (max-width: 1080px) {
+  /* line 157, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+  .upload {
+    margin: 20px auto;
+    text-align: center;
+  }
+  /* line 198, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+  .upload em {
+    left: -65px;
+    position: relative;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 157, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+  .upload {
+    width: 85%;
+  }
+  /* line 205, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+  .upload em {
+    left: -10%;
+  }
+}
+
+@media (min-width: 0) and (max-width: 320px) {
+  /* line 157, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+  .upload {
+    width: 85%;
+  }
+  /* line 211, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+  .upload em {
+    left: -10%;
+  }
+}
+
+@media (min-width: 0) and (max-width: 320px) {
+  /* line 218, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_form.scss */
+  .formSection {
+    width: 106%;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products {
+  width: 100%;
+  height: 896px;
+  margin: -240px auto;
+  padding-top: 127px;
+}
+
+/* line 6, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .catalog {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding-left: 133px;
+}
+
+/* line 11, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .catalog .wrapper {
+  max-width: 324px;
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 16, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .catalog .wrapper h2 {
+  font-family: "News Gothic XBd BT";
+  font-size: 40px;
+  text-align: left;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+/* line 24, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .catalog .wrapper em {
+  color: #00539b;
+}
+
+/* line 27, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .catalog .wrapper p {
+  margin-top: 22px;
+  color: #4a4a4a;
+  font-size: 16px;
+  text-align: left;
+  line-height: 24px;
+}
+
+/* line 35, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .catalog .btn {
+  width: 60%;
+  text-align: right;
+  display: inline-block;
+}
+
+/* line 39, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .catalog .btn .cta {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 173px;
+  height: 50px;
+  border: solid 2px #00539b;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 47, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .catalog .btn .cta a {
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 50, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .catalog .btn .cta a p {
+  font-family: "News Gothic Bd BT";
+  margin: 12px auto;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #00539b;
+  text-align: center;
+  line-height: 25px;
+}
+
+/* line 61, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .catalog .btn .cta:hover {
+  background-color: #06507f;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* line 65, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .catalog .btn .cta:hover a p {
+  color: #ffffff;
+}
+
+/* line 73, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .carousel {
+  height: 450px;
+  width: 100%;
+  margin: 58px auto 0 auto;
+  text-align: center;
+  font-size: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 82, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .carousel ul {
+  display: inline-block;
+  padding-top: 10px;
+  width: 100%;
+  font-size: 0;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}
+
+/* line 92, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .carousel ul li {
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 40px;
+  margin-right: 14px;
+  display: inline-block;
+  width: 242px;
+  height: 411px;
+  border-radius: 13px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 31px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* line 103, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .carousel ul li .imageCarousel {
+  width: 100%;
+  height: 55%;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 109, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .carousel ul li .imageCarousel img {
+  vertical-align: middle;
+  text-align: center;
+  margin: 15% auto 0 auto;
+  max-width: 75%;
+  max-height: 100%;
+}
+
+/* line 117, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .carousel ul li .details {
+  width: 100%;
+  height: 45%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 10%;
+  overflow: hidden;
+}
+
+/* line 124, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .carousel ul li .details h4 {
+  font-family: "News Gothic Bd BT";
+  font-size: 16px;
+  text-align: center;
+  line-height: 16px;
+  color: #00539b;
+}
+
+/* line 132, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .carousel ul li .details p {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 8px;
+  text-align: center;
+  font-size: 12px;
+  color: #4a4a4a;
+}
+
+/* line 141, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .carousel ul li .details .price {
+  margin-top: 34px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* line 146, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .carousel ul li .details .price em {
+  font-family: "News Gothic XBd BT";
+  font-size: 50px;
+  color: #e20714;
+}
+
+/* line 151, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .carousel ul li .details .price span {
+  font-family: "News Gothic XBd BT";
+  font-size: 25px;
+  color: #e20714;
+  position: absolute;
+  left: 60%;
+}
+
+/* line 158, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .carousel ul li .details .price .smallNumber {
+  font-family: "News Gothic XBd BT";
+  font-size: 25px;
+  color: #e20714;
+  position: absolute;
+  left: 54%;
+}
+
+/* line 167, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .carousel ul li:hover {
+  transform: scale(1.03);
+}
+
+/* line 175, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .owl-dots {
+  width: 100%;
+  height: 20px;
+  display: inline-block;
+  margin: 0 auto;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 184, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .owl-dots .owl-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 5px;
+  background-color: rgba(0, 83, 155, 0.5);
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+/* line 195, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+.products .owl-dots .active {
+  display: inline-block;
+  width: 20px;
+  height: 8px;
+  margin-left: 5px;
+  vertical-align: middle;
+  border-radius: 7px;
+  background-color: #00539b;
+  transition: color 0.5s;
+  transition: width 0.1s cubic-bezier(0.11, 0.74, 0.7, 0.42);
+}
+
+@media (min-width: 0) and (max-width: 1080px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+  .products {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 50px;
+  }
+  /* line 217, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+  .products .catalog {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    padding-left: 0;
+  }
+  /* line 223, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+  .products .catalog .wrapper {
+    width: 100%;
+    max-width: 324px;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+  }
+  /* line 229, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+  .products .catalog .wrapper h2 {
+    text-align: center;
+  }
+  /* line 232, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+  .products .catalog .wrapper p {
+    margin: 30px auto;
+    text-align: center;
+  }
+  /* line 237, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+  .products .catalog .btn {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* line 241, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+  .products .catalog .btn .cta {
+    width: 210px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 320px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_products.scss */
+  .products {
+    width: 106%;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+.newsletter {
+  width: 100%;
+  height: 254px;
+  background-color: #00539b;
+  position: relative;
+  top: 35%;
+  font-size: 0;
+  padding-top: 85px;
+}
+
+/* line 9, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+.newsletter .newSub {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding-left: 133px;
+}
+
+/* line 14, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+.newsletter .newSub .wrapper {
+  max-width: 420px;
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 19, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+.newsletter .newSub .wrapper h2 {
+  font-family: "News Gothic XBd BT";
+  font-size: 40px;
+  text-align: left;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+/* line 27, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+.newsletter .newSub .wrapper em {
+  color: #00539b;
+}
+
+/* line 30, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+.newsletter .newSub .wrapper p {
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* line 37, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+.newsletter .newSub .subscribe {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  text-align: right;
+}
+
+/* line 42, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+.newsletter .newSub .subscribe .inputField {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+/* line 46, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+.newsletter .newSub .subscribe .inputField input {
+  width: 263px;
+  margin: 0;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.1);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+/* line 53, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+.newsletter .newSub .subscribe .inputField input::placeholder {
+  color: #ffffff;
+}
+
+/* line 58, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+.newsletter .newSub .subscribe .cta {
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  width: 151px;
+  height: 50px;
+  background: linear-gradient(to bottom, #f8e71c, #ebdb11);
+  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.16);
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 67, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+.newsletter .newSub .subscribe .cta a {
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 70, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+.newsletter .newSub .subscribe .cta a p {
+  font-family: "News Gothic Bd BT";
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #00539b;
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 80, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+.newsletter .newSub .subscribe .cta:hover {
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16);
+  background-color: #e2d21a;
+}
+
+@media (min-width: 0) and (max-width: 1080px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+  .newsletter {
+    top: 0;
+    height: 453px;
+  }
+  /* line 91, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+  .newsletter .newSub {
+    display: block;
+    padding-left: 0;
+  }
+  /* line 94, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+  .newsletter .newSub .wrapper {
+    width: 100%;
+    max-width: 506px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* line 100, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+  .newsletter .newSub .wrapper h2 {
+    text-align: center;
+  }
+  /* line 103, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+  .newsletter .newSub .wrapper p {
+    text-align: center;
+    margin: 30px auto;
+  }
+  /* line 108, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+  .newsletter .newSub .subscribe {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+  /* line 113, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+  .newsletter .newSub .subscribe .inputField {
+    display: block;
+  }
+  /* line 115, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+  .newsletter .newSub .subscribe .inputField input {
+    width: 329px;
+  }
+  /* line 119, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+  .newsletter .newSub .subscribe .cta {
+    display: block;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    width: 329px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 133, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+  .newsletter .newSub .subscribe .inputField input {
+    width: 85%;
+  }
+  /* line 137, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+  .newsletter .newSub .subscribe .cta {
+    width: 80%;
+  }
+}
+
+@media (min-width: 0) and (max-width: 320px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+  .newsletter {
+    width: 106%;
+  }
+  /* line 150, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+  .newsletter .newSub .subscribe .inputField input {
+    width: 85%;
+  }
+  /* line 154, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_newsetter.scss */
+  .newsletter .newSub .subscribe .cta {
+    width: 80%;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footer.scss */
+.footer {
+  width: 100%;
+  height: 254px;
+  position: relative;
+  top: 243px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+/* line 8, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footer.scss */
+.footer .infoFooter {
+  margin-top: 100px;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* line 13, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footer.scss */
+.footer .infoFooter .copyright {
+  vertical-align: middle;
+  display: inline-block;
+  width: 40%;
+  font-size: 0;
+}
+
+/* line 18, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footer.scss */
+.footer .infoFooter .copyright p {
+  font-size: 12px;
+  margin: 0 auto;
+  text-align: left;
+  color: #4a4a4a;
+}
+
+/* line 25, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footer.scss */
+.footer .infoFooter .social {
+  vertical-align: middle;
+  display: inline-block;
+  width: 15%;
+  font-size: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 32, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footer.scss */
+.footer .infoFooter .social ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 35, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footer.scss */
+.footer .infoFooter .social ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8.5px;
+  margin-right: 8.5px;
+}
+
+/* line 41, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footer.scss */
+.footer .infoFooter .social ul li a img {
+  width: 40px;
+  height: 40px;
+}
+
+/* line 47, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footer.scss */
+.footer .infoFooter .social ul li:hover {
+  opacity: 0.9;
+}
+
+/* line 54, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footer.scss */
+.footer .infoFooter .links {
+  vertical-align: middle;
+  display: inline-block;
+  width: 40%;
+  font-size: 0;
+  text-align: right;
+}
+
+/* line 60, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footer.scss */
+.footer .infoFooter .links ul {
+  display: inline-block;
+  text-align: right;
+}
+
+/* line 63, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footer.scss */
+.footer .infoFooter .links ul li {
+  display: inline-block;
+  margin: 0 10px 0 10px;
+}
+
+/* line 66, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footer.scss */
+.footer .infoFooter .links ul li a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* line 69, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footer.scss */
+.footer .infoFooter .links ul li a p {
+  font-size: 12px;
+  margin: 0 auto;
+  color: #4a4a4a;
+}
+
+/* line 76, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footer.scss */
+.footer .infoFooter .links ul li:not(:last-child):after {
+  position: absolute;
+  width: 1px;
+  margin: auto 10px auto 10px;
+  content: '';
+  height: 10px;
+  background: #4a4a4a;
+  vertical-align: middle;
+}
+
+/* line 87, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footer.scss */
+.footer .infoFooter .links ul li:hover a {
+  text-decoration: underline;
+}
+
+@media (min-width: 0) and (max-width: 1080px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footer.scss */
+  .footer {
+    display: none;
+  }
+}
+
+/* line 2, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.navigation .right {
+  margin: 0;
+}
+
+/* line 4, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.navigation .right .menuMobileICON {
+  display: none;
+  margin: 0px;
+  vertical-align: middle;
+  /*hamburguer icon*/
+  /*end hamburguer icon*/
+}
+
+/* line 9, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.navigation .right .menuMobileICON p {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  font-family: "News Gothic Bd BT";
+  margin-right: 6px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 19, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.navigation .right .menuMobileICON span {
+  cursor: pointer;
+  display: block;
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  transition: all 5s ease-in-out;
+}
+
+/* line 28, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.navigation .right .menuMobileICON span:before, .navigation .right .menuMobileICON span:after {
+  background-color: #ffffff;
+  content: '';
+  display: block;
+  height: 4px;
+  transition: all 200ms ease-in-out;
+}
+
+/* line 35, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.navigation .right .menuMobileICON span:before {
+  box-shadow: 0 10px 0 #ffffff;
+  margin-bottom: 16px;
+}
+
+/* line 39, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.navigation .right .menuMobileICON span:hover:before {
+  box-shadow: 0 0 0 #ffffff;
+  transform: translateY(10px) rotate(45deg);
+}
+
+/* line 43, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.navigation .right .menuMobileICON span:hover:after {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* line 52, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.menuMobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(150deg, #00539b, #06507f);
+  z-index: 999999999999;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+/* line 61, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.menuMobile .logo {
+  width: 50%;
+  text-align: left;
+  display: inline-block;
+}
+
+/* line 65, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.menuMobile .logo li {
+  display: inline-block;
+  margin-right: 13px;
+  vertical-align: middle;
+}
+
+/* line 69, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.menuMobile .logo li img {
+  width: 49px;
+  height: 49px;
+}
+
+/* line 73, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.menuMobile .logo li .regressoAulas {
+  width: 61px;
+  vertical-align: middle;
+}
+
+/* line 76, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.menuMobile .logo li .regressoAulas h3 {
+  font-family: "News Gothic Bd BT";
+  font-size: 12px;
+  color: #ffffff;
+}
+
+/* line 81, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.menuMobile .logo li .regressoAulas em {
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+/* line 85, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.menuMobile .logo li .regressoAulas h2 {
+  font-size: 23px;
+  font-family: "News Gothic XBd BT";
+  color: #f8e71c;
+}
+
+/* line 94, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.menuMobile .menu {
+  margin: 100px auto 0 auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 98, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.menuMobile .menu li {
+  margin-top: 44px;
+  vertical-align: middle;
+}
+
+/* line 101, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.menuMobile .menu li a {
+  text-decoration: none;
+}
+
+/* line 103, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.menuMobile .menu li a p {
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 48px;
+  font-family: "News Gothic XBd BT";
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 111, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.menuMobile .menu li a p:hover {
+  color: #f8e71c;
+}
+
+/* line 122, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.menuMobile .menuMobileICON {
+  margin: 0px auto;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: right;
+  width: 45%;
+  /*hamburguer icon*/
+  /*end hamburguer icon*/
+}
+
+/* line 130, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.menuMobile .menuMobileICON p {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  font-family: "News Gothic Bd BT";
+  margin-right: 6px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 140, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.menuMobile .menuMobileICON span {
+  cursor: pointer;
+  display: block;
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  transition: all 5s ease-in-out;
+}
+
+/* line 148, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.menuMobile .menuMobileICON span:before, .menuMobile .menuMobileICON span:after {
+  background-color: #ffffff;
+  content: '';
+  display: block;
+  height: 4px;
+  transition: all 200ms ease-in-out;
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* line 156, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_menuMobile.scss */
+.menuMobile .menuMobileICON span:before {
+  margin-bottom: 16px;
+  transform: translateY(10px) rotate(45deg);
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_featuresMobile.scss */
+.featuresMobile {
+  display: none;
+  background-color: #00539b;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
+  overflow: hidden;
+}
+
+/* line 11, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_featuresMobile.scss */
+.featuresMobile .wrapper {
+  vertical-align: middle;
+  z-index: 99999;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 17, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_featuresMobile.scss */
+.featuresMobile .wrapper h2 {
+  margin: 0 auto;
+  font-family: "News Gothic XBd BT";
+  font-size: 38px;
+  text-align: center;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+/* line 27, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_featuresMobile.scss */
+.featuresMobile .wrapper em {
+  color: #f8e71c;
+}
+
+/* line 30, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_featuresMobile.scss */
+.featuresMobile .wrapper p {
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+}
+
+/* line 38, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_featuresMobile.scss */
+.featuresMobile .cta {
+  margin: 50px auto 0 auto;
+  text-align: center;
+  width: 239px;
+  height: 50px;
+  border: 2px solid #f8e71c;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 48, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_featuresMobile.scss */
+.featuresMobile .cta a {
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 51, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_featuresMobile.scss */
+.featuresMobile .cta a p {
+  font-family: "News Gothic Bd BT";
+  margin: 12px auto;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #f8e71c;
+  text-align: center;
+}
+
+/* line 63, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_featuresMobile.scss */
+.featuresMobile .cta:hover {
+  background: linear-gradient(to bottom, #f8e71c, #ebdb11);
+}
+
+/* line 66, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_featuresMobile.scss */
+.featuresMobile .cta:hover a p {
+  color: #00539b;
+}
+
+/* line 72, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_featuresMobile.scss */
+.featuresMobile .figure {
+  width: 100%;
+  vertical-align: middle;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* line 77, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_featuresMobile.scss */
+.featuresMobile .figure img {
+  width: 505px;
+}
+
+@media (min-width: 0) and (max-width: 1080px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_featuresMobile.scss */
+  .featuresMobile {
+    display: block;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_featuresMobile.scss */
+  .featuresMobile {
+    padding-top: 350px;
+  }
+  /* line 89, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_featuresMobile.scss */
+  .featuresMobile .wrapper h2 {
+    max-width: 331px;
+  }
+  /* line 93, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_featuresMobile.scss */
+  .featuresMobile .figure {
+    width: 100%;
+  }
+  /* line 95, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_featuresMobile.scss */
+  .featuresMobile .figure img {
+    max-height: 1244px;
+    position: relative;
+    left: -100px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 320px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_featuresMobile.scss */
+  .featuresMobile {
+    width: 106%;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footerMobile.scss */
+.footerMobile {
+  display: none;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* line 5, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footerMobile.scss */
+.footerMobile .infoFooter {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 8, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footerMobile.scss */
+.footerMobile .infoFooter .social {
+  display: inline-block;
+  margin-bottom: 48px;
+}
+
+/* line 11, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footerMobile.scss */
+.footerMobile .infoFooter .social ul {
+  display: inline-block;
+}
+
+/* line 13, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footerMobile.scss */
+.footerMobile .infoFooter .social ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 19, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footerMobile.scss */
+.footerMobile .infoFooter .social ul li a img {
+  width: 50px;
+  height: 50px;
+}
+
+/* line 25, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footerMobile.scss */
+.footerMobile .infoFooter .social ul li:hover {
+  opacity: 0.9;
+}
+
+/* line 32, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footerMobile.scss */
+.footerMobile .infoFooter .copyright {
+  vertical-align: middle;
+  font-size: 0;
+}
+
+/* line 35, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footerMobile.scss */
+.footerMobile .infoFooter .copyright p {
+  font-size: 12px;
+  margin: 0 auto;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+/* line 42, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footerMobile.scss */
+.footerMobile .infoFooter .links {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* line 48, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footerMobile.scss */
+.footerMobile .infoFooter .links ul {
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 51, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footerMobile.scss */
+.footerMobile .infoFooter .links ul li {
+  display: inline-block;
+  margin: 0 10px 0 10px;
+}
+
+/* line 54, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footerMobile.scss */
+.footerMobile .infoFooter .links ul li a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* line 57, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footerMobile.scss */
+.footerMobile .infoFooter .links ul li a p {
+  font-size: 12px;
+  margin: 0 auto;
+  color: #4a4a4a;
+}
+
+/* line 64, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footerMobile.scss */
+.footerMobile .infoFooter .links ul li:not(:last-child):after {
+  position: absolute;
+  width: 1px;
+  margin: auto 10px auto 10px;
+  content: '';
+  height: 10px;
+  background: #4a4a4a;
+  vertical-align: middle;
+}
+
+/* line 75, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footerMobile.scss */
+.footerMobile .infoFooter .links ul li:hover a {
+  text-decoration: underline;
+}
+
+@media (min-width: 0) and (max-width: 1080px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_footerMobile.scss */
+  .footerMobile {
+    display: block;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_productPopUp.scss */
+.productPopUp {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999999999999;
+  padding-top: 2%;
+}
+
+/* line 10, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_productPopUp.scss */
+.productPopUp .popUp {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fcfcfc;
+  width: 1012px;
+  height: 597px;
+  font-size: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.16);
+}
+
+/* line 22, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_productPopUp.scss */
+.productPopUp .popUp .carouselPopUp {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+/* line 28, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_productPopUp.scss */
+.productPopUp .popUp .carouselPopUp li {
+  display: inline-block;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10%;
+  overflow: hidden;
+}
+
+/* line 36, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_productPopUp.scss */
+.productPopUp .popUp .carouselPopUp li img {
+  width: 100%;
+}
+
+/* line 43, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_productPopUp.scss */
+.productPopUp .popUp .detailsPopUp {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 85px;
+}
+
+/* line 49, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_productPopUp.scss */
+.productPopUp .popUp .detailsPopUp h4 {
+  font-family: "News Gothic XBd BT";
+  font-size: 40px;
+  text-align: left;
+  line-height: 48px;
+  color: #00539b;
+  margin-bottom: 20px;
+}
+
+/* line 57, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_productPopUp.scss */
+.productPopUp .popUp .detailsPopUp p {
+  max-width: 327px;
+  color: #4a4a4a;
+  font-size: 16px;
+  text-align: left;
+  line-height: 24px;
+}
+
+/* line 64, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_productPopUp.scss */
+.productPopUp .popUp .detailsPopUp .select {
+  width: 324px;
+  margin-top: 40px;
+  border-radius: -5px;
+  height: 50px;
+  border: 2px solid #00539b;
+  background-color: transparent;
+  border-radius: -10px;
+  display: block;
+  outline: 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* line 77, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_productPopUp.scss */
+.productPopUp .popUp .detailsPopUp .select em {
+  font-size: 14px;
+  color: #00539b;
+  line-height: 20px;
+  text-align: left;
+  font-family: "News Gothic Bd BT";
+}
+
+/* line 85, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_productPopUp.scss */
+.productPopUp .popUp .detailsPopUp .price {
+  margin-top: 50px;
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: left;
+}
+
+/* line 91, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_productPopUp.scss */
+.productPopUp .popUp .detailsPopUp .price em {
+  font-family: "News Gothic XBd BT";
+  font-size: 70px;
+  color: #e20714;
+}
+
+/* line 96, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_productPopUp.scss */
+.productPopUp .popUp .detailsPopUp .price span {
+  font-family: "News Gothic XBd BT";
+  font-size: 45px;
+  color: #e20714;
+  position: absolute;
+  left: 25%;
+}
+
+/* line 103, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_productPopUp.scss */
+.productPopUp .popUp .detailsPopUp .price .smallNumber {
+  font-family: "News Gothic XBd BT";
+  font-size: 45px;
+  color: #e20714;
+  position: absolute;
+  left: 54%;
+}
+
+/* line 111, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_productPopUp.scss */
+.productPopUp .popUp .detailsPopUp .stock {
+  display: none;
+  font-size: 0;
+  position: absolute;
+  top: 68%;
+  right: 10%;
+}
+
+/* line 117, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_productPopUp.scss */
+.productPopUp .popUp .detailsPopUp .stock span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #00539b;
+  margin-top: -2px;
+}
+
+/* line 126, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_productPopUp.scss */
+.productPopUp .popUp .detailsPopUp .stock p {
+  display: inline-block;
+  vertical-align: middle;
+  color: #00539b;
+  font-size: 11px;
+  text-align: left;
+  font-family: "News Gothic Bd BT";
+  letter-spacing: 0.5px;
+  margin-top: 0.5px;
+  margin-left: 5px;
+}
+
+/* line 140, /Users/trepa/Desktop/EDIT/360/LIDL - ISTO NÃO É O QUE PARECE - SITE/scss/_productPopUp.scss */
+.productPopUp .popUp .window {
+  position: absolute;
+  font-family: "News Gothic XBd BT";
+  color: #00539b;
+  top: 5%;
+  right: 3%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=../css/main.map */

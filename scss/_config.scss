@@ -1,0 +1,48 @@
+$primary-font: 'News Gothic BT';
+$Bd-font: 'News Gothic Bd BT';
+$XBd-font: 'News Gothic XBd BT';
+
+
+body, html { 
+	font-family: $primary-font;
+	height:100%;
+}
+
+section {
+	&[data-margin-top='0']{
+		padding-top: 0;
+	}
+	&[data-margin-bottom='0']{
+		padding-bottom: 0;
+	}
+
+	&[data-margin-top='20']{
+		padding-top: 20px;
+	}
+	&[data-margin-bottom='20']{
+		padding-bottom: 20px;
+	}
+	&[data-margin-top='40']{
+		padding-top: 40px;
+	}
+	&[data-margin-bottom='40']{
+		padding-bottom: 40px;
+	}
+	&[data-margin-top='60']{
+		padding-top: 60px;
+	}
+	&[data-margin-bottom='60']{
+		padding-bottom: 60px;
+	}
+
+	&[data-text-align="right"]{
+		.wrapper {
+			text-align:right;
+		}
+	}
+	&[data-text-align="left"]{
+		.wrapper {
+			text-align:left;
+		}
+	}
+}

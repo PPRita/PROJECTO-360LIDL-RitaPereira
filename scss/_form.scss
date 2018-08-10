@@ -1,0 +1,221 @@
+.formSection{
+	width: 100%;
+  	height: 608px;
+  	background: linear-gradient(129deg, #f8e71c, #fcc500);
+  	position: relative;
+	top: -220px;
+    z-index: 99;
+
+		    .wrapper{
+				max-width: 412px;
+				width: 50%;
+				margin-left: 100px;
+				//transform: translateY(25%);
+				display: inline-block;
+				vertical-align: middle;
+				//position: absolute;
+				z-index:99999;
+				h2{
+					font-family: $XBd-font;
+					font-size: 40px;
+					text-align: left;
+					line-height: 48px;
+					color: #ffffff;
+
+				}
+				em{
+					color: #00539b;
+				}
+				p{
+					margin-top: 30px;
+					color: #4a4a4a;
+					font-size: 16px;
+					text-align: left;
+					line-height: 24px;
+				}
+			}
+			.cta{
+				margin-top: 20px;
+				width: 344px;
+				height: 50px;
+				background:#00539b;
+				box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.15);
+				transition: all 0.3s ease-in-out;
+					a{
+						text-decoration: none;
+						text-align: center;
+						p{
+							font-family: $Bd-font;
+							margin: 12px auto;
+							font-size: 12px;
+							letter-spacing: 1.5px;
+							color: #f8e71c;
+							text-align: center;
+							color: #ffffff;
+							line-height: 4.17;
+
+						}
+					}
+				&:hover{
+					background-color: #06507f;
+					box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.15);
+				}
+			}
+			.figure{
+				width: 50%;
+				//max-width:731px;
+				display: inline-block;
+				position: relative;
+				top: -50px;
+				left: 0;
+				vertical-align: middle;
+				margin: 0 auto;
+				text-align: center;
+				z-index:9999;
+					img{
+						height: 658px;
+						width: 752px;
+					}
+			}
+
+		@include mq (0,1080px){
+			top: 0;
+			width: 100%;
+			height: 654px;
+			margin: 0 auto;
+    		text-align: center;
+ 			padding: 0 10%;
+				.wrapper{
+					max-width: 520px;
+					width: 100%;
+					margin: 100px auto 0 auto;
+					text-align: center;
+
+						h2{
+							text-align: center;
+						}
+						p{
+							text-align: center;
+							margin: 40px auto 20px auto;;
+						}
+
+				}
+				.figure{
+					display: none;
+				}
+				.cta{
+					margin: 0 auto;
+					text-align: center;
+
+				}
+		}
+		@include mq (0,600px){
+			.cta{
+				width: 85%;
+			}
+		}
+		@include mq (0,320px){
+			.cta{
+				width: 85%;
+			}
+		}
+
+		}
+		.inputField{
+			input{
+					margin-top: 20px;
+					width: 344px;
+					height: 50px;
+					border: 2px solid #00539b;
+					background-color: transparent;
+					box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+					padding-left: 20px;
+					font-size: 14px;
+		    		color: #00539b;
+		    		line-height:20px;
+		    		font-family: $Bd-font;
+		    		text-align: left;
+
+			}
+				input::placeholder {
+				  color: #00539b;
+				}
+			&:hover{
+
+			}
+			@include mq (0,600px){
+				input{
+					width: 85%;
+				}
+			}
+			@include mq (0,320px){
+				input{
+					width: 85%;
+				}
+			}
+		}
+		.upload{
+			margin-top: 20px;
+			width: 344px;
+			height: 50px;
+			border: 2px solid #00539b;
+			background-color: transparent;
+			box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+			display: block;
+		    outline: 0;
+		    padding: 14px 20px 13px 19px;
+		    font-size: 12px;
+		    cursor: pointer;
+		    position: relative;
+
+
+		    	&:after{
+				width: 15px;
+		    	height: 15px;
+		    	background-position: -66px -12px;
+		    	top: 13px;
+		    	right: 16px;
+		    	font-size: 14px;
+		    	line-height:20px;
+		    	color: #00539b;
+		    	//font-family: $Bd-font;
+		    	font-weight: bold;
+		    	content: "+";
+		    	position: absolute;
+		    	}
+
+		    em{
+		    	font-size: 14px;
+		    	color: #00539b;
+		    	line-height:20px;
+		    	text-align: left;
+		    	font-family: $Bd-font;
+		    }
+
+	@include mq (0,1080px){
+		margin: 20px auto;
+		text-align: center;
+			em{
+			    left: -65px;
+    			position: relative;
+			}
+	}
+	@include mq (0,600px){
+		width: 85%;
+			em{
+				left: -10%;
+			}
+	}
+	@include mq (0,320px){
+		width: 85%;
+		em{
+				left: -10%;
+			}
+	}
+}
+
+@include mq (0,320px){
+	.formSection{
+		width:106%;
+	}
+}

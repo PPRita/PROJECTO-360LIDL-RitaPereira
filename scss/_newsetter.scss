@@ -1,0 +1,160 @@
+.newsletter{
+	width: 100%;
+  	height: 254px;
+  	background-color: #00539b;
+	position: relative;
+    top: 35%;
+    font-size: 0;
+    padding-top: 85px;
+    .newSub{
+    	display: inline-block;
+		width: 100%;
+		vertical-align: middle;
+		padding-left: 133px;
+		.wrapper{
+				max-width: 420px;
+				width: 50%;
+				display: inline-block;
+				vertical-align: middle;
+				h2{
+					font-family: $XBd-font;
+					font-size: 40px;
+					text-align: left;
+					line-height: 48px;
+					color: #ffffff;
+
+				}
+				em{
+					color: #00539b;
+				}
+				p{
+					margin-top: 20px;
+					color: #ffffff;
+					font-size: 16px;
+					text-align: left;
+				}
+			}
+		.subscribe{
+			display: inline-block;
+			vertical-align: middle;
+			width: 50%;
+			text-align: right;
+				.inputField{
+					display: inline-block;
+					vertical-align: middle;
+					padding: 10px;
+						input{
+							width: 263px;
+							margin: 0;
+							box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.1);
+							border: 2px solid #ffffff;
+							color: #ffffff;
+						}
+						input::placeholder {
+						  color: #ffffff;
+						}
+				}
+		
+			.cta{
+				text-align: left;
+				display: inline-block;
+				vertical-align: middle;
+				width: 151px;
+				height: 50px;
+				background:linear-gradient(to bottom, #f8e71c, #ebdb11);
+				box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.16); 
+				transition: all 0.3s ease-in-out;
+				a{
+					text-decoration: none;
+					text-align: center;
+					p{
+						font-family: $Bd-font;
+						font-size: 12px;
+						letter-spacing: 1.5px;
+						color: #00539b;
+						padding: 20px;
+						text-align: center;
+
+					}
+				}
+				&:hover{
+					box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16);
+					background-color:  #e2d21a;
+				}
+			}
+		}
+	}
+
+	@include mq (0,1080px){
+		top: 0;
+		height: 453px;
+			.newSub{
+				display: block;
+				padding-left: 0;
+					.wrapper{
+						width: 100%;
+						max-width: 506px;
+						display: block;
+						margin: 0 auto;
+						text-align: center;
+							h2{
+								text-align: center;
+							}
+							p{
+								text-align: center;
+								margin: 30px auto;
+							}
+					}
+					.subscribe{
+						width: 100%;
+						margin: 0 auto;
+						text-align: center;
+						display: block;
+							.inputField{
+								display: block;
+									input{
+										width: 329px;
+									}
+							}
+							.cta{
+								display: block;
+								margin: 20px auto 0 auto;
+								text-align: center;
+								width: 329px;
+							}
+					}
+
+			}
+	}
+	@include mq (0,600px){
+		.newSub{
+				.subscribe{
+					.inputField{
+						input{
+							width:85%;
+						}
+					}
+					.cta{
+						width:80%;
+					}
+				}
+			}
+
+	}
+
+	@include mq (0,320px){
+		width: 106%;
+			.newSub{
+				.subscribe{
+					.inputField{
+						input{
+							width:85%;
+						}
+					}
+					.cta{
+						width:80%;
+					}
+				}
+			}
+	}
+}

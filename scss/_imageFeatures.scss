@@ -1,0 +1,122 @@
+
+.imageFeatures {
+	height: 780px;
+	width: 100%;
+	position: relative;
+	//overflow: hidden;
+		img{
+			width:100%;
+		    transform: translateY(-30%);
+		}
+		&:before{
+			content:'';
+	        position:absolute;
+	        top:-400px;
+	        bottom: 0;
+	        left:0;
+	        right:0;
+	        background:linear-gradient(rgba(0, 0, 0, -22.56), rgba(0, 0, 0, -26.56)), linear-gradient(to top, rgba(0, 83, 155, 0.28), #00539b);
+	        z-index:99;
+		}
+	@include mq (0,1100px){
+		img{
+			transform: translateY(-25%);
+		}
+	}
+	@include mq (0,1080px){
+			display: none;
+	}
+}
+
+
+
+.infoFeatures{
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	font-size: 0;
+	vertical-align: middle;
+	position: absolute;
+
+
+	.wrapper{
+		max-width: 416px;
+		width: 50%;
+		margin-left: 133px;
+		margin-top: 50px;
+		display: inline-block;
+		vertical-align: middle;
+		h2{
+			font-family: $XBd-font;
+			font-size: 40px;
+			text-align: left;
+			line-height: 48px;
+			color: #ffffff
+
+		}
+		em{
+			color: #f8e71c;
+		}
+		p{
+			margin-top: 30px;
+			color: #ffffff;
+			font-size: 16px;
+			text-align: left;
+			line-height: 24px;
+		}
+	}
+	.cta{
+		margin-top: 50px;
+		width: 239px;
+		height: 50px;
+		//background:linear-gradient(to bottom, #f8e71c, #ebdb11);
+		//box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.16);
+		border: 2px solid #f8e71c;
+		transition: all 0.3s ease-in-out;
+
+			a{
+				text-decoration: none;
+				text-align: center;
+				p{
+					font-family: $Bd-font;
+					margin: 12px auto;
+					font-size: 12px;
+					letter-spacing: 1.5px;
+					color: #f8e71c;
+					text-align: center;
+					//line-height: 4.17;
+
+				}
+			}
+			&:hover{
+				background:linear-gradient(to bottom, #f8e71c, #ebdb11);
+					a{
+						p{
+							color: #00539b;
+						}
+					}
+			}
+	}
+	.figure{
+		width: 100%;
+		max-width:731px;
+		display: inline-block;
+		position: relative;
+	    top: 18px;
+	    left: -116px;
+		vertical-align: middle;
+		margin: 0 auto;
+		text-align: center;
+		z-index:99;
+			img{
+				width: 100%;
+			    height: 637px;
+			}
+	}
+
+	@include mq (0,1080px){
+		display: none;
+	}
+
+}
